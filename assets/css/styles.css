@@ -1097,12 +1097,14 @@ body {
 .post-media.featured-image img {
   width: 100%;
   height: auto;
+  border-radius: 2%;
 }
 /* line 1479, styles.scss */
 .post-media.media-gallery {
   background-color: #000;
   height: 0;
   overflow: hidden;
+  border-radius: 2%;
 }
 /* line 1486, styles.scss */
 .post-media.media-gallery .gallery-elements {
@@ -1130,6 +1132,7 @@ body {
 .post-media.media-gallery .gallery-elements .gallery-element .element-image img {
   width: 100%;
   height: auto;
+  border-radius: 2%;
 }
 /* line 1515, styles.scss */
 .post-media.media-gallery .gallery-elements .gallery-element .element-overlay {
@@ -1458,6 +1461,7 @@ body {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 2%;
 }
 /* line 1962, styles.scss */
 #space-recipes-wrapper #space-recipes .recipe-grid-wrapper .recipe-grid .recipe-header .recipe-thumbnail-wrapper:hover .thumbnail-overlay span {
@@ -1474,6 +1478,7 @@ body {
 #space-recipes-wrapper #space-recipes .recipe-grid-wrapper .recipe-grid .recipe-header .recipe-thumbnail-wrapper:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  border-radius: 2%;
 }
 /* line 1991, styles.scss */
 #space-recipes-wrapper #space-recipes .recipe-grid-wrapper .recipe-grid .recipe-body {
@@ -1830,6 +1835,7 @@ body {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 2%;
 }
 /* line 2466, styles.scss */
 #space-recipes-wrapper #space-recipes .recipe-classic-wrapper .recipe-classic .recipe-header .recipe-thumbnail-wrapper:hover .thumbnail-overlay span {
@@ -1846,6 +1852,7 @@ body {
 #space-recipes-wrapper #space-recipes .recipe-classic-wrapper .recipe-classic .recipe-header .recipe-thumbnail-wrapper:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  border-radius: 2%;
 }
 /* line 2495, styles.scss */
 #space-recipes-wrapper #space-recipes .recipe-classic-wrapper .recipe-classic .recipe-body {
@@ -2198,6 +2205,7 @@ body {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 2%;
 }
 /* line 2970, styles.scss */
 #space-posts-wrapper #space-posts .post-grid-wrapper .post-grid .post-thumbnail-wrapper:hover .thumbnail-overlay span {
@@ -2214,6 +2222,7 @@ body {
 #space-posts-wrapper #space-posts .post-grid-wrapper .post-grid .post-thumbnail-wrapper:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  border-radius: 2%;
 }
 /* line 2997, styles.scss */
 #space-posts-wrapper #space-posts .post-grid-wrapper .post-grid .post-body {
@@ -3303,6 +3312,7 @@ body {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 2%;
 }
 /* line 4490, styles.scss */
 #space-single-wrapper #space-single .post-author-wrapper .post-author .author-avatar a .overlay {
@@ -3328,6 +3338,7 @@ body {
 #space-single-wrapper #space-single .post-author-wrapper .post-author .author-avatar a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  border-radius: 2%;
 }
 /* line 4519, styles.scss */
 #space-single-wrapper #space-single .post-author-wrapper .post-author .author-avatar a:hover .overlay {
@@ -4290,6 +4301,7 @@ body {
 .textwidget img {
   max-width: 100%;
   height: auto;
+  border-radius: 2%;
 }
 /* line 5830, styles.scss */
 .space-content embed,
@@ -4719,6 +4731,7 @@ body {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 2%;
 }
 /* line 6417, styles.scss */
 #adjacent-posts-wrapper #adjacent-posts .adjacent-post .adjacent-post-thumbnail a .overlay {
@@ -4744,6 +4757,7 @@ body {
 #adjacent-posts-wrapper #adjacent-posts .adjacent-post .adjacent-post-thumbnail a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  border-radius: 2%;
 }
 /* line 6446, styles.scss */
 #adjacent-posts-wrapper #adjacent-posts .adjacent-post .adjacent-post-thumbnail a:hover .overlay {
