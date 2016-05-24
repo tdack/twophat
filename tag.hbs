@@ -1,7 +1,7 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-<body class="home page loading">
+<body class="archive tax-space-recipe-categories term-mains tag-{{tag.id}}">
   <div id="space-site-wrapper" class="clearfix">
     <div id="space-site" class="clearfix">
         {{#is "paged"}}
@@ -11,18 +11,21 @@
         {{/is}}
         <div class="header-bottom-border"></div>
           <div id="space-archives-header-wrapper">
+            {{! If we have a tag cover, display that - else blog cover - else nothing }}
             <div id="archives-header-background" {{#if tag.image}}style="url({{tag.image}})" {{else}}{{#if @blog.cover}} style="background-image: url({{@blog.cover}})" {{else}}no-cover{{/if}}{{/if}}></div>
             <div id="space-archives-header">
                 <div class="header-column column-to-left">
-                    <h1 class="header-title">{{tag.name}}</h1>
+                    <h1 class="header-title" style="text-transform: capitalize;">{{tag.name}}</h1>
                 </div>
                 <div class="header-column column-to-right">
                     <div id="header-dropdown" class="">
-                        <div class="dropdown-header">{{tag.name}}<i class="fa fa-angle-down"></i></div>
+                        <div class="dropdown-header">Categories<i class="fa fa-angle-down"></i></div>
                         <div class="dropdown-separator"></div>
                         <div class="dropdown-body clearfix">
-                          {{#get "tags"}}
-                            <a class="dropdown-link" href="{{utl}}">{{name}}</a>
+                          {{#get "tags" limit="all" filter="id:-{{tag.id}}" as |tag|}}
+                            {{#foreach tag}}
+                              <a class="dropdown-link" href="{{url}}">{{name}}</a>
+                            {{/foreach}}
                           {{/get}}
                         </div>
                     </div>
@@ -49,5 +52,3 @@
     {{> includes/preload-wrapper}}
   </div>
   <!-- END OF #space-site-wrapper -->
-
-{{! If we have a tag cover, display that - else blog cover - else nothing }}
