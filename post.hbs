@@ -52,7 +52,7 @@
                   {{> "post/author"}}
                   <div class="related-recipes-wrapper">
                       <div class="related-recipes clearfix">
-                          {{#get "posts" limit="2" include="tags,author"}}
+                          {{#get "posts" limit="2" include="tags,author" filter="id:-{{id}}"}}
                               {{! Loop through our posts collection }}
                               {{#foreach posts}}
                               <div class="related-recipe-wrapper">
