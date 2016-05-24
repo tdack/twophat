@@ -1,0 +1,34 @@
+@font-face{
+	font-family: 'Bellota';
+	src: url('../fonts/Bellota-Bold-webfont.eot');
+	src: url('../fonts/Bellota-BoldItalic-webfont.eot');
+	src: url('../fonts/Bellota-Italic-webfont.eot');
+	src: url('../fonts/Bellota-Light-webfont.eot');
+	src: url('../fonts/Bellota-LightItalic-webfont.eot');
+	src: url('../fonts/Bellota-Regular-webfont.eot');
+	src: url('../fonts/Bellota-Bold-webfont.eot?#iefix') format('eot'),
+		 url('../fonts/Bellota-Bold-webfont.svg#webfont') format('svg'),
+		 url('../fonts/Bellota-Bold-webfont.ttf') format('truetype'),
+		 url('../fonts/Bellota-Bold-webfont.woff') format('woff'),
+		 url('../fonts/Bellota-BoldItalic-webfont.eot?#iefix') format('eot'),
+		 url('../fonts/Bellota-BoldItalic-webfont.svg#webfont') format('svg'),
+		 url('../fonts/Bellota-BoldItalic-webfont.ttf') format('truetype'),
+		 url('../fonts/Bellota-BoldItalic-webfont.woff') format('woff'),
+		 url('../fonts/Bellota-Italic-webfont.eot?#iefix') format('eot'),
+		 url('../fonts/Bellota-Italic-webfont.svg#webfont') format('svg'),
+		 url('../fonts/Bellota-Italic-webfont.ttf') format('truetype'),
+		 url('../fonts/Bellota-Italic-webfont.woff') format('woff'),
+		 url('../fonts/Bellota-Light-webfont.eot?#iefix') format('eot'),
+		 url('../fonts/Bellota-Light-webfont.svg#webfont') format('svg'),
+		 url('../fonts/Bellota-Light-webfont.ttf') format('truetype'),
+		 url('../fonts/Bellota-Light-webfont.woff') format('woff'),
+		 url('../fonts/Bellota-LightItalic-webfont.eot?#iefix') format('eot'),
+		 url('../fonts/Bellota-LightItalic-webfont.svg#webfont') format('svg'),
+		 url('../fonts/Bellota-LightItalic-webfont.ttf') format('truetype'),
+		 url('../fonts/Bellota-LightItalic-webfont.woff') format('woff'),
+		 url('../fonts/Bellota-Regular-webfont.eot?#iefix') format('eot'),
+		 url('../fonts/Bellota-Regular-webfont.svg#webfont') format('svg'),
+		 url('../fonts/Bellota-Regular-webfont.ttf') format('truetype'),
+		 url('../fonts/Bellota-Regular-webfont.woff') format('woff');
+
+}
