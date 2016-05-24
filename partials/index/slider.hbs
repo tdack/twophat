@@ -10,8 +10,8 @@
                 </div>
             </div>
         </div>
-{{#get "posts" include="tags,author" filter="featured:true" limit="5" as |featured|}}
-    {{#foreach featured}}
+    {{#get "posts" include="tags,author" filter="featured:true" limit="5" as |featured|}}
+        {{#foreach featured}}
         <div id="slide-{{id}}" class="slide">
             <div class="slide-background" style="background-image: url({{image}});"></div>
             <div class="slide-overlay-wrapper">
@@ -20,21 +20,21 @@
                     {{> includes/separator}}
                     <p class="recipe-lead">{{excerpt}}</p>
                     <div class="recipe-meta">
-                        <p>In <a property="recipeCategory" content='{{tags limit="1"}}' href="">{{tags limit="1"}}</a> by <a href="{{author.slug}}">{{author.name}}</a> on <a href=""></a>{{date}}</p>
+                        <p>{{#if tags}}In <a property="recipeCategory" content='{{tags limit="1"}}' href="">{{tags limit="1"}}</a>{{/if}} by <a href="{{author.slug}}">{{author.name}}</a> on <a href=""></a>{{date}}</p>
                     </div>
                 </div>
             </div>
         </div>
-    {{/foreach}}
-{{/get}}
+        {{/foreach}}
+    {{/get}}
     </div>
     <div class="slider-controls">
         <a class="slide-control navigation prev-control" href="index.html#"><span class="number"><i class="fa fa-angle-left"></i></span></a>
-{{#get "posts" filter="featured:true" limit="5" as |featured|}}
-    {{#foreach featured}}
-        <a class="slide-control pagination" href="#" data-target="slide-{{id}}" title="{{title}}"><span class="number">{{@number}}</span></a>
-    {{/foreach}}
-{{/get}}
+        {{#get "posts" filter="featured:true" limit="5" as |featured|}}
+            {{#foreach featured}}
+              <a class="slide-control pagination" href="#" data-target="slide-{{id}}" title="{{title}}"><span class="number">{{@number}}</span></a>
+            {{/foreach}}
+        {{/get}}
         <a class="slide-control navigation next-control" href="index.html#"><span class="number"><i class="fa fa-angle-right"></i></span></a>
     </div>
 </div>
