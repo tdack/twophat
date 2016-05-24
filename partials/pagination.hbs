@@ -1,0 +1,11 @@
+<div id="main-pagination-wrapper">
+    <div id="main-pagination" class="clearfix">
+      {{#if prev}}
+        <a class="prev page-numbers" href="{{page_url prev}}">Newer</a>
+      {{/if}}
+      Page <span class='page-numbers'>{{page}}</span> of <span class='page-numbers'>{{pages}}</span>
+      {{#if next}}
+        <a class="next page-numbers" href="{{page_url next}}">Older</a>
+      {{/if}}
+    </div>
+</div>

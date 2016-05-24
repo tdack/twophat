@@ -1,0 +1,198 @@
+{{!< default}}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+<body class="single single-space-recipes postid-{{id}} single-format-standard loading">
+  <div id="space-site-wrapper" class="clearfix">
+    <div vocab="http://schema.org/" typeof="Recipe" id="space-site" class="clearfix">
+    {{> header extraclass="always-filled"}}
+    <div id="space-single-header-classic"></div>
+        {{! The main content area }}
+        <div id="space-body-wrapper">
+          <div id="space-single-wrapper" class="clearfix header_classic">
+              <div id="space-single" class="post-{{id}} space-recipes">
+                  <div class="recipe-mobile-ingredients">
+                    {{> post/ingredients}}
+                  </div>
+                  <div class="post-content-wrapper">
+                      <div class="recipe-header">
+                          <div class="header-title">
+                              <h1 property="name">{{title}}</h1>
+                          </div>
+                          <div class="header-meta">In <a property="recipeCategory" href="">{{tags limit="1"}}</a> by <a property="author" content="{{author.name}}" href="{{author.slug}}">{{author.name}}</a> on <a property="datePublished" datetime="{{date published_at}}" href="{{url}}">{{date published_at format="MMMM DD, YYYY"}}</a></div>
+                      </div>
+                      {{#if image}}
+                        <div class="post-media featured-image clearfix"><img width="760" height="470" src="{{image}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" /></div>
+                      {{/if}}
+                      <div class="post-content space-content">
+                        {{content}}
+                      </div>
+                      <div class="post-footer clearfix">
+                          <div class="footer-column column-to-left">
+                              <div class="post-taxonomy clearfix">
+                                  {{#foreach tags}}
+                                  <a href="{{url}}" title="{{title}}">{{name}}</a>
+                                  {{/foreach}}
+                              </div>
+                          </div>
+                          <div class="footer-column column-to-right">
+                              <div class="post-share">
+                                  <div class="share-label">Share Recipe</div>
+                                  <div class="share-links clearfix">
+                                      <a class="share-link share-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=497');return false;"><i class="fa fa-facebook-official"></i></a>
+                                      <a class="share-link share-twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=303,width=600');return false;"><i class="fa fa-twitter"></i></a>
+                                      <a class="share-link share-pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url={{url absolute="true"}}&media={{image absolute="true"}}&description={{excerpt}}"
+                                          onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-pinterest"></i></a>
+                                      <a class="share-link share-google-plus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=497');return false;"><i class="fa fa-google-plus"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  {{> "post/author"}}
+                  <div class="related-recipes-wrapper">
+                      <div class="related-recipes clearfix">
+                          {{#get "posts" limit="2" include="tags,author"}}
+                              {{! Loop through our posts collection }}
+                              {{#foreach posts}}
+                              <div class="related-recipe-wrapper">
+                                  <div class="related-background" style="background-image: url({{image}});"></div>
+                                  <div class="related-recipe">
+                                      <div class="related-overlay">
+                                          <h1 class="recipe-title"><a href="{{url}}">{{title}}</a></h1>
+                                          <span class="separator">
+                                            {{> includes/separator-small width="46px" height="12px"}}
+                                            </span>
+                                            <div class="recipe-meta">
+                                                {{#if tags}}
+                                                {{#foreach tags limit="1"}}
+                                                  <p>In <a property="recipeCategory" content="" href="{{url}}">{{name}}</a>
+                                                {{/foreach}}
+                                                {{/if}}
+                                                 by <a href="">{{author.name}}</a> on <a href="{{url}}">{{date format="DD MMMM YYYY"}}</a></p>
+                                              <!-- <p>Time to cook <span class="meta">20 minutes<meta property="totalTime" datetime="PT20M" /></span>, make <span class="meta">4 servings</span></p> -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              {{/foreach}}
+                          {{/get}}
+                      </div>
+                  </div>
+{{!--
+                  <div id="comments" class="post-comments-wrapper">
+                      <div class="post-comments clearfix">
+                          <div class="comments-title">
+                              <h3>Leave Reply</h3>
+                          </div>
+                          <div id="respond" class="comment-respond">
+                              <h3 id="reply-title" class="comment-reply-title"> <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel Reply</a></small></h3>
+                              <form action="http://7code.space/demo/twophat/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                                  <div class="comment-form-element-wrapper comment-form-comment">
+                                      <textarea id="comment" name="comment" cols="45" rows="7"></textarea>
+                                      <label for="comment">Comment</label>
+                                  </div>
+                                  <div class="comment-form-element-wrapper comment-form-author">
+                                      <input id="author" name="author" type="text" value="" />
+                                      <label for="author">Name<span>*</span></label>
+                                  </div>
+                                  <div class="comment-form-element-wrapper comment-form-email">
+                                      <input id="email" name="email" type="text" value="" />
+                                      <label for="email">Mail<span>*</span></label>
+                                  </div>
+                                  <div class="comment-form-element-wrapper comment-form-url">
+                                      <input id="url" name="url" type="text" value="" />
+                                      <label for="url">Website</label>
+                                  </div>
+                                  <p class="form-submit">
+                                      <input name="submit" type="submit" id="submit" class="submit" value="Publish Comment" />
+                                      <input type='hidden' name='comment_post_ID' value='56' id='comment_post_ID' />
+                                      <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                  </p>
+                              </form>
+                          </div>
+                          <!-- #respond -->
+                      </div>
+                  </div>
+ --}}
+              </div>
+              <div class="sidebar-wrapper">
+                  <div class="sidebar clearfix">
+                      <div class="widget clearfix recipe-card">
+                          {{> post/ingredients}}
+                      </div>
+                      <div class="widget clearfix widget_twophat_recipes">
+                          <div class="widget-title">
+                              <h4>Recent</h4>
+                          </div>
+                          <div class="recipes-holder">
+                              {{#get "posts" limit="5" as |post|}}
+                              {{#foreach post}}
+                              <div class="recipe-holder clearfix">
+                                  <div class="recipe-details clearfix">
+                                      <div class="recipe-title"><a href="{{url}}" title="{{title}}">{{title}}</a></div>
+                                  </div>
+                                  {{#if image}}
+                                  <div class="recipe-thumbnail">
+                                      <a href="{{url}}" title="{{title}}">
+                                          <img width="60" height="60" src="{{image}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{title}}" srcset="{{image}} 150w, {{image}} 60w"
+                                              sizes="(max-width: 60px) 100vw, 60px" />
+                                          <i class="fa fa-long-arrow-right overlay"></i>
+                                      </a>
+                                  </div>
+                                  {{/if}}
+                              </div>
+                              {{/foreach}}
+                              {{/get}}
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div id="adjacent-posts-wrapper">
+              <div id="adjacent-posts" class="clearfix">
+                      {{#next_post}}
+                      <div class="adjacent-post next-post clearfix">
+                          <div class="adjacent-post-data">
+                              <div class="adjacent-post-label">Next Recipe</div>
+                              <div class="adjacent-post-title">
+                                  <h4 class="post-title"><a href="{{url}}">{{title}}</a></h4>
+                              </div>
+                          </div>
+                              <div class="adjacent-post-thumbnail">
+                                  <a href="{{url}}">
+                                      <img width="60" height="60" src="{{image}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{slug}}" srcset="{{image}} 150w, {{image}} 60w" sizes="(max-width: 60px) 100vw, 60px" />
+                                      <i class="fa fa-long-arrow-left overlay"></i>
+                                  </a>
+                              </div>
+                      </div>
+                      {{/next_post}}
+                      {{#prev_post}}
+                      <div class="adjacent-post previous-post clearfix">
+                          <div class="adjacent-post-data">
+                              <div class="adjacent-post-label">Previous Recipe</div>
+                              <div class="adjacent-post-title">
+                                  <h4 class="post-title"><a href="{{url}}">{{title}}</a></h4>
+                              </div>
+                          </div>
+                              <div class="adjacent-post-thumbnail">
+                                  <a href="{{url}}">
+                                      <img width="60" height="60" src="{{image}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{slug}}" srcset="{{image}} 150w, {{image}} 60w" sizes="(max-width: 60px) 100vw, 60px" />
+                                      <i class="fa fa-long-arrow-right overlay"></i>
+                                  </a>
+                              </div>
+                      </div>
+                      {{/prev_post}}
+              </div>
+          </div>
+          {{> footer}}
+    </div>
+    <!-- END OF #space-site -->
+  </div>
+  <!-- END OF #space-site-wrapper -->
+  {{> includes/twitter-aside}}
+  {{> includes/mobile-nav}}
+  {{> includes/search-aside}}
+  {{> includes/preload-wrapper}}
+{{/post}}

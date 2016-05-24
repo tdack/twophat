@@ -1,0 +1,30 @@
+{{! This is the post loop - each post will be output using this markup }}
+<!-- Post grid -->
+{{#foreach posts}}
+<div class="recipe-grid-wrapper isotope-element">
+    <div class="recipe-grid clearfix post-{{id}} space-recipes type-space-recipes status-publish format-standard has-post-thumbnail hentry space-recipe-categories-sweets space-recipe-tags-muffins space-recipe-tags-pastry">
+        <div class="recipe-header">
+        {{#if image}}
+            <div class="recipe-thumbnail-wrapper">
+                <img width="760" height="470" src="{{image}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" />
+                <a class="thumbnail-overlay" href="{{url}}"><span>Recipe Details</span></a>
+            </div>
+        {{/if}}
+        </div>
+        <div class="recipe-body">
+            <h1 class="recipe-title"><a href="{{url}}">{{{title}}}</a></h1>
+            {{> includes/separator}}
+            <div class="recipe-meta">
+                {{#if tags}}
+                {{#foreach tags limit="1"}}
+                  <p>In <a property="recipeCategory" content="" href="{{url}}">{{name}}</a>
+                {{/foreach}}
+                {{/if}}
+                 by <a href="">{{author.name}}</a> on <a href="{{url}}">{{date format="DD MMMM YYYY"}}</a></p>
+              <!-- <p>Time to cook <span class="meta">20 minutes<meta property="totalTime" datetime="PT20M" /></span>, make <span class="meta">4 servings</span></p> -->
+          </div>
+        </div>
+    </div>
+</div>
+{{/foreach}}
+<!-- End Post grid -->
