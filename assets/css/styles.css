@@ -1,10 +1,3 @@
-/*
-
-Grain and Knot SCSS
-
-v. 0.1.0122
-
-*/
 /* line 18, styles.scss */
 body {
   font-family: "Open Sans", sans-serif;
@@ -84,7 +77,7 @@ body {
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 119, styles.scss */
 #space-header-wrapper #space-header .header-logo-wrapper .image-logo {
@@ -538,7 +531,7 @@ body {
   font-size: 48px;
   font-weight: 400;
   line-height: 68px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   -moz-transition: 0.6s;
   -o-transition: 0.6s;
   -webkit-transition: 0.6s;
@@ -777,7 +770,7 @@ body {
   color: #fff;
   font-size: 48px;
   line-height: 56px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 1023, styles.scss */
 #space-archives-header-wrapper #space-archives-header #header-dropdown {
@@ -799,7 +792,7 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 28px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -926,7 +919,7 @@ body {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   background-color: transparent;
   border: none;
 }
@@ -944,7 +937,7 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
@@ -1043,7 +1036,7 @@ body {
   font-size: 48px;
   font-weight: 400;
   line-height: 68px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 1394, styles.scss */
 #space-single-header-wrapper #single-header-overlay-wrapper #single-header-overlay .header-meta {
@@ -1151,7 +1144,7 @@ body {
   font-size: 14px;
   line-height: 32px;
   text-align: center;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   background-color: rgba(0, 0, 0, 0.75);
 }
 /* line 1536, styles.scss */
@@ -1225,7 +1218,7 @@ body {
   line-height: 30px;
   text-align: center;
   font-style: italic;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 1637, styles.scss */
 .post-media.media-quote .quote-wrapper .quote-author-wrapper {
@@ -1308,7 +1301,7 @@ body {
   line-height: 30px;
   text-align: center;
   font-style: italic;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   background-color: #fff;
 }
 /* line 1756, styles.scss */
@@ -1503,7 +1496,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   line-height: 30px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1692,7 +1685,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   line-height: 30px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1875,7 +1868,7 @@ body {
   text-decoration: none;
   font-size: 30px;
   line-height: 36px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2104,7 +2097,7 @@ body {
   text-decoration: none;
   font-size: 30px;
   line-height: 36px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2482,7 +2475,7 @@ body {
   text-decoration: none;
   font-size: 30px;
   line-height: 36px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2718,7 +2711,7 @@ body {
   text-decoration: none;
   font-size: 30px;
   line-height: 36px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2928,7 +2921,7 @@ body {
   text-decoration: none;
   font-size: 42px;
   line-height: 58px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 3983, styles.scss */
 #space-single-wrapper #space-single .post-content-wrapper .recipe-header .header-meta {
@@ -3024,7 +3017,7 @@ body {
   text-decoration: none;
   font-size: 42px;
   line-height: 58px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -3082,7 +3075,7 @@ body {
   text-decoration: none;
   font-size: 42px;
   line-height: 58px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 4191, styles.scss */
 #space-single-wrapper #space-single .post-content-wrapper .post-media {
@@ -3362,7 +3355,7 @@ body {
   color: #222;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
@@ -3485,7 +3478,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   line-height: 30px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -3632,7 +3625,7 @@ body {
   color: #222;
   font-size: 15px;
   line-height: 25px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 4928, styles.scss */
 #space-single-wrapper #space-single .post-comments-wrapper .post-comments .comments-list .comment.user-type .comment-header .comment-data .comment-author a {
@@ -3729,7 +3722,7 @@ body {
   color: #222;
   font-size: 15px;
   line-height: 25px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 5079, styles.scss */
 #space-single-wrapper #space-single .post-comments-wrapper .post-comments .comments-list .comment.pings-type a {
@@ -4022,7 +4015,7 @@ body {
 .textwidget h6 {
   margin-bottom: 30px;
   color: #222;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 5499, styles.scss */
 .space-content h1,
@@ -4077,7 +4070,7 @@ body {
   border-left: 5px solid #f2f2f2;
   color: #333;
   font-style: italic;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 5564, styles.scss */
 .space-content blockquote cite,
@@ -4096,7 +4089,7 @@ body {
   font-size: 14px;
   line-height: 30px;
   font-style: italic;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 5590, styles.scss */
 .space-content table,
@@ -4115,7 +4108,7 @@ body {
   background-color: #fdfdfd;
   color: #333;
   font-style: italic;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 5612, styles.scss */
 .space-content table thead tr,
@@ -4235,7 +4228,7 @@ body {
 .space-content acronym,
 .textwidget abbr,
 .textwidget acronym {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   font-style: italic;
 }
 /* line 5757, styles.scss */
@@ -4279,7 +4272,7 @@ body {
 .space-content q,
 .textwidget q {
   color: #777;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   font-style: italic;
 }
 /* line 5811, styles.scss */
@@ -4350,7 +4343,7 @@ body {
   color: #777;
   font-size: 14px;
   font-style: italic;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 5897, styles.scss */
 .space-content .gallery,
@@ -4388,7 +4381,7 @@ body {
   color: #777;
   font-size: 14px;
   font-style: italic;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 5948, styles.scss */
 .space-content .gallery.gallery-columns-1 .gallery-item,
@@ -4680,7 +4673,7 @@ body {
   display: block;
   font-size: 15px;
   line-height: 25px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 6359, styles.scss */
 #adjacent-posts-wrapper #adjacent-posts .adjacent-post .adjacent-post-data .adjacent-post-title .post-title {
@@ -5178,7 +5171,7 @@ body {
   line-height: 22px;
   font-style: italic;
   text-decoration: none;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 7065, styles.scss */
 .widget.widget_calendar #calendar_wrap #wp-calendar thead tr th {
@@ -5687,7 +5680,7 @@ body {
 .widget.widget_twophat_recipes .recipes-holder .recipe-holder .recipe-details .recipe-title a {
   color: #222;
   text-decoration: none;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -6058,7 +6051,7 @@ body {
   font-size: 14px;
   line-height: 32px;
   font-weight: 700;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
 }
 /* line 8428, styles.scss */
 .widget.recipe-card .recipe-card-ingredients .ingredients-section .ingredients-section-name .section-name {
@@ -7130,7 +7123,7 @@ body {
 #space-search-wrapper .search-body #search-response-wrapper ul li .result-body .result-title a {
   color: #e8e8e8;
   text-decoration: none;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   border-bottom: 2px solid transparent;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -7240,7 +7233,7 @@ body {
   font-weight: 700;
   line-height: 38px;
   text-transform: uppercase;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bellota", sans-serif;
   white-space: nowrap;
 }
 /* line 9986, styles.scss */
