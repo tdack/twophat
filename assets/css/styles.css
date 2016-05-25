@@ -616,7 +616,7 @@ body {
   top: 0;
   bottom: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -983,8 +983,8 @@ body {
   top: 0;
   bottom: 0;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
+  /*background-attachment: fixed;*/
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
@@ -1005,8 +1005,8 @@ body {
   top: 0;
   bottom: 0;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
+  /*background-attachment: fixed;*/
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
