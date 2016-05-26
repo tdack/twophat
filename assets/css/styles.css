@@ -55,6 +55,14 @@ body {
   float: right;
   margin-right: -20px;
 }
+#space-header-wrapper #space-header .header-column.column-to-middle {
+  left: 50%;
+  width: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
 /* line 87, styles.scss */
 #space-header-wrapper #space-header .header-logo-wrapper {
   position: relative;
@@ -83,7 +91,9 @@ body {
 #space-header-wrapper #space-header .header-logo-wrapper .image-logo {
   position: relative;
   display: block;
-  height: 32px;
+  height: 64px;
+  float: left;
+  vertical-align: middle;
 }
 /* line 126, styles.scss */
 #space-header-wrapper #space-header .header-logo-wrapper .image-logo img {
