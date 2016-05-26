@@ -14,9 +14,11 @@
         {{^is "paged"}}
         {{! Featured posts only show on the first page }}
         {{> index/slider}}
+        <div id="space-body-wrapper">
+        {{else}}
+        <div id="space-body-wrapper" style="padding-top: 75px;">
         {{/is}}
         {{! The main content area on the homepage }}
-        <div id="space-body-wrapper">
             <div id="space-recipes-wrapper" class="clearfix boxed">
                 <div id="space-recipes" class="clearfix isotope-wrapper ">
                   {{! The tag below includes the post loop - partials/post/loop.hbs }}
