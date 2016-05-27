@@ -1,31 +1,31 @@
 {{#ct}}
 <!-- post/ingredients.hbs //-->
-    {{#if recipe.title}}
-        <div class="widget clearfix recipe-card">
-            <div class="recipe-card-title">Ingredients</div>
-            <div class="separator">
-                {{> includes/separator-small width="46px" height="12px"}}
-            </div>
-            <div class="recipe-card-ingredients clearfix">
-                <div class="ingredients-section">
-                    <div class="ingredients-section-name"><span class="section-name">{{recipe.title}}</span></div>
-                    <div class="ingredients-list">
+    {{#if recipes}}
+        <div class="recipe-card-title">Ingredients</div>
+        <div class="separator">
+            {{> includes/separator-small width="46px" height="12px"}}
+        </div>
+        <div class="recipe-card-ingredients clearfix">
+            {{#foreach recipes as |recipe|}}
+            <div class="ingredients-section">
+                <div class="ingredients-section-name"><span class="section-name">{{recipe.title}}</span></div>
+                <div class="ingredients-list">
                         {{#foreach recipe.ingredients}}
-                            <div property="recipeIngredient" class="ingredient clearfix">
-                                <div class="ingredient-name">{{name}}</div>
-                                <div class="ingredient-amount">{{quantity}}</div>
-                            </div>
+                        <div property="recipeIngredient" class="ingredient clearfix">
+                            <div class="ingredient-name">{{name}}</div>
+                            <div class="ingredient-amount">{{quantity}}</div>
+                        </div>
                         {{/foreach}}
-                    </div>
                 </div>
             </div>
-            <div class="recipe-card-meta">Time to cook <span class="meta">{{recipe.time}}
-              <meta property="totalTime" datetime="" /></span>, makes <span property="recipeYield" class="meta">{{recipe.serves}}</span>
-            </div>
-            <meta property="description" content="">
-            <meta property="image" content="{{../post.image}}">
+            {{/foreach}}
         </div>
+        <div class="recipe-card-meta">{{#if recipes.time}}Time to cook <span class="meta">{{recipes.time}}<meta property="totalTime" datetime="" /></span>, {{/if}}
+        {{#if recipes.serves}}makes <span property="recipeYield" class="meta">{{recipes.serves}}</span>{{/if}}
+        </div>
+        <meta property="description" content="">
+        <meta property="image" content="{{../post.image}}">
     {{/if}}
-    {{else}}
+{{else}}
     <!-- No Ingredients Found -->
 {{/ct}}
