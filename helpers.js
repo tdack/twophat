@@ -3,10 +3,20 @@ var hbs = require('express-hbs'),
 
 module.exports = function() {
 
-    hbs.registerHelper('ct', function(options) {
-        options = options || {};
-        options.hash = options.hash || {};
-        options.data = options.data || {};
+    hbs.registerHelper('responsive', function(imageURL, options) {
+      if (!imageURL) return;
+      var responsive='sizes="(max-width: 1080px) 100vw, 1080px" srcset="';
+      [640, 800, 1080].forEach(function(size){
+        responsive += imageURL.replace(/\.[a-zA-z]{3}/g, function(x){return '_' + size + x;}) +', ';
+      });
+      responsive = responsive.slice(0,-2) +'"';
+      return new hbs.handlebars.SafeString(responsive);
+    });
+
+    hbs.registerHelper('ct', function (options) {
+      options = options || {};
+      options.hash = options.hash || {};
+      options.data = options.data || {};
 
         var self = this,
             data = hbs.handlebars.createFrame(options.data);
