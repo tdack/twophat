@@ -1,7 +1,4 @@
-{{!< default}}
-
-{{! Everything inside the #post tags pulls data from the post }}
-{{#post}}
+{{> includes/footer}}
 <body class="single single-space-recipes postid-{{id}} single-format-standard loading">
   <div id="space-site-wrapper" class="clearfix">
     <div vocab="http://schema.org/" typeof="Recipe" id="space-site" class="clearfix">
@@ -155,8 +152,5 @@
     <!-- END OF #space-site -->
   </div>
   <!-- END OF #space-site-wrapper -->
-  {{> includes/twitter-aside}}
-  {{> includes/mobile-nav}}
-  {{> includes/search-aside}}
-  {{> includes/preload-wrapper}}
+  {{> includes/footer}}
 {{/post}}
