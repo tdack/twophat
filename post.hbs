@@ -64,15 +64,15 @@
                                             {{> includes/separator-small width="46px" height="12px"}}
                                             </span>
                                             <div class="recipe-meta">
-                                                {{#if tags}}
+                                              {{#if tags}}
                                                 {{#foreach tags limit="1"}}
-                                                  <p>In <a property="recipeCategory" content="" href="{{url}}">{{name}}</a>
+                                                  <p>In <a property="recipeCategory" content="{{name}}" href="{{url}}">{{name}}</a>
                                                 {{/foreach}}
-                                                {{/if}}
-                                                {{#author}}
-                                                by <a property="author" content="{{name}}" href="{{url}}">{{name}}</a> on <a property="datePublished" datetime="{{date ../published_at}}" href="{{../url}}">{{date ../published_at format="MMMM DD, YYYY"}}</a>
-                                                {{/author}}
-                                                {{!-- <p>Time to cook <span class="meta">20 minutes<meta property="totalTime" datetime="PT20M" /></span>, make <span class="meta">4 servings</span></p> --}}
+                                              {{/if}}
+                                              {{#author}}
+                                              by <a property="author" content="{{name}}" href="{{url}}">{{name}}</a> on <a property="datePublished" datetime="{{date ../published_at}}" href="{{../url}}">{{date ../published_at format="MMMM DD, YYYY"}}</a>
+                                              {{/author}}
+                                              {{!-- <p>Time to cook <span class="meta">20 minutes<meta property="totalTime" datetime="PT20M" /></span>, make <span class="meta">4 servings</span></p> --}}
                                           </div>
                                       </div>
                                   </div>
@@ -90,7 +90,7 @@
                               <h4>Recent</h4>
                           </div>
                           <div class="recipes-holder">
-                              {{#get "posts" limit="5" as |post|}}
+                            {{#get "posts" limit="5" as |post|}}
                               {{#foreach post}}
                               <div class="recipe-holder clearfix">
                                   <div class="recipe-details clearfix">
@@ -107,7 +107,7 @@
                                   {{/if}}
                               </div>
                               {{/foreach}}
-                              {{/get}}
+                            {{/get}}
                           </div>
                       </div>
                   </div>
