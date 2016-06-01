@@ -20,7 +20,9 @@
                   <p>In <a property="recipeCategory" content="" href="{{url}}">{{name}}</a>
                 {{/foreach}}
                 {{/if}}
-                <br />by <a href="">{{author.name}}</a> on <a href="{{url}}">{{date format="DD MMMM YYYY"}}</a></p>
+                {{#author}}
+                <br />by <a href="{{url}}">{{name}}</a> on <a href="{{../url}}">{{date ../published_at format="DD MMMM YYYY"}}</a></p>
+                {{/author}}
           </div>
         </div>
     </div>

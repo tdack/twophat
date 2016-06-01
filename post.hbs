@@ -19,7 +19,9 @@
                           <div class="header-title">
                               <h1 property="name">{{title}}</h1>
                           </div>
-                          <div class="header-meta">In <a property="recipeCategory" href="">{{tags limit="1"}}</a> by <a property="author" content="{{author.name}}" href="{{author.slug}}">{{author.name}}</a> on <a property="datePublished" datetime="{{date published_at}}" href="{{url}}">{{date published_at format="MMMM DD, YYYY"}}</a></div>
+                          {{#author}}
+                          <div class="header-meta">by <a property="author" content="{{name}}" href="{{url}}">{{name}}</a> on <a property="datePublished" datetime="{{date ../published_at}}" href="{{../url}}">{{date ../published_at format="MMMM DD, YYYY"}}</a></div>
+                          {{/author}}
                       </div>
                       {{#if image}}
                         <div class="post-media featured-image clearfix"><img width="760" height="470" src="{{image}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" /></div>
