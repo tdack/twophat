@@ -1,4 +1,7 @@
-{{> includes/footer}}
+{{!< default}}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
 <body class="single single-space-recipes postid-{{id}} single-format-standard loading">
   <div id="space-site-wrapper" class="clearfix">
     <div vocab="http://schema.org/" typeof="Recipe" id="space-site" class="clearfix">
