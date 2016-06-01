@@ -1,6 +1,7 @@
 {{#ct}}
 <!-- post/ingredients.hbs //-->
     {{#if recipes}}
+    <div class="{{divclass}}">
         <div class="recipe-card-title">Ingredients</div>
         <div class="separator">
             {{> includes/separator-small width="46px" height="12px"}}
@@ -25,6 +26,7 @@
         </div>
         <meta property="description" content="">
         <meta property="image" content="{{../post.image}}">
+      </div>
     {{/if}}
 {{else}}
     <!-- No Ingredients Found -->

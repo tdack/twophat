@@ -11,9 +11,7 @@
         <div id="space-body-wrapper">
           <div id="space-single-wrapper" class="clearfix header_classic">
               <div id="space-single" class="post-{{id}} space-recipes">
-                  <div class="recipe-mobile-ingredients">
-                    {{> post/ingredients}}
-                  </div>
+                  {{> post/ingredients divclass="recipe-mobile-ingredients"}}
                   <div class="post-content-wrapper">
                       <div class="recipe-header">
                           <div class="header-title">
@@ -39,7 +37,7 @@
                           </div>
                           <div class="footer-column column-to-right">
                               <div class="post-share">
-                                  <div class="share-label">Share Recipe</div>
+                                  <div class="share-label">Share</div>
                                   <div class="share-links clearfix">
                                       <a class="share-link share-facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=497');return false;"><i class="fa fa-facebook-official"></i></a>
                                       <a class="share-link share-twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=303,width=600');return false;"><i class="fa fa-twitter"></i></a>
@@ -120,9 +118,7 @@
               </div>
               <div class="sidebar-wrapper">
                   <div class="sidebar clearfix">
-                      <div class="widget clearfix recipe-card">
-                          {{> post/ingredients}}
-                      </div>
+                      {{> post/ingredients divclass="widget clearfix recipe-card"}}
                       <div class="widget clearfix widget_twophat_recipes">
                           <div class="widget-title">
                               <h4>Recent</h4>
