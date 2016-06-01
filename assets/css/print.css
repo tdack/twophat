@@ -1,0 +1,24 @@
+@media print {
+
+  * {
+    background: #fff;
+    color: #000;
+  }
+
+  html {
+    font-size: 100%/1.5;
+  }
+
+  #space-header-wrapper,
+  #space-footer-wrapper,
+  #space-single-header-classic,
+  #adjacent-posts-wrapper,
+  div .related-recipes-wrapper,
+  div .widget_twophat_recipes,
+  div .post-share,
+  div .author-social-links
+    {
+     display: none;
+   }
+
+}
