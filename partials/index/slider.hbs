@@ -20,7 +20,7 @@
                     {{> includes/separator}}
                     <p class="recipe-lead">{{excerpt}}</p>
                     <div class="recipe-meta">
-                        <p>{{#if tags}}In <a property="recipeCategory" content='{{tags limit="1"}}' href="">{{tags limit="1"}}</a>{{/if}} by <a href="{{author.slug}}">{{author.name}}</a> on <a href=""></a>{{date}}</p>
+                        <p>{{#if tags}}In <a property="recipeCategory" content='{{tags limit="1"}}' href="">{{tags limit="1"}}</a>{{/if}} by <a href="/author/{{author.slug}}">{{author.name}}</a> on <a href=""></a>{{date}}</p>
                     </div>
                 </div>
             </div>
