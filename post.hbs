@@ -50,9 +50,9 @@
                       </div>
                   </div>
                   {{> "post/author"}}
-                  <div class="related-recipes-wrapper">
-                      <div class="related-recipes clearfix">
-                          {{#get "posts" limit="2" include="tags,author" filter="id:-{{id}}"}}
+                    {{#get "posts" limit="2" include="tags,author" filter="id:-{{id}}"}}
+                        <div class="related-recipes-wrapper">
+                            <div class="related-recipes clearfix">
                               {{! Loop through our posts collection }}
                               {{#foreach posts}}
                               <div class="related-recipe-wrapper">
@@ -78,9 +78,9 @@
                                   </div>
                               </div>
                               {{/foreach}}
-                          {{/get}}
-                      </div>
-                  </div>
+                            </div>
+                        </div>
+                    {{/get}}
               </div>
               <div class="sidebar-wrapper">
                   <div class="sidebar clearfix">
@@ -113,42 +113,7 @@
                   </div>
               </div>
           </div>
-
-          <div id="adjacent-posts-wrapper">
-              <div id="adjacent-posts" class="clearfix">
-                      {{#next_post}}
-                      <div class="adjacent-post next-post clearfix">
-                          <div class="adjacent-post-data">
-                              <div class="adjacent-post-label">Next Recipe</div>
-                              <div class="adjacent-post-title">
-                                  <h4 class="post-title"><a href="{{url}}">{{title}}</a></h4>
-                              </div>
-                          </div>
-                              <div class="adjacent-post-thumbnail">
-                                  <a href="{{url}}">
-                                      <img width="60" height="60" src="{{image}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{slug}}" srcset="{{image}} 150w, {{image}} 60w" sizes="(max-width: 60px) 100vw, 60px" />
-                                      <i class="fa fa-long-arrow-left overlay"></i>
-                                  </a>
-                              </div>
-                      </div>
-                      {{/next_post}}
-                      {{#prev_post}}
-                      <div class="adjacent-post previous-post clearfix">
-                          <div class="adjacent-post-data">
-                              <div class="adjacent-post-label">Previous Recipe</div>
-                              <div class="adjacent-post-title">
-                                  <h4 class="post-title"><a href="{{url}}">{{title}}</a></h4>
-                              </div>
-                          </div>
-                              <div class="adjacent-post-thumbnail">
-                                  <a href="{{url}}">
-                                      <img width="60" height="60" src="{{image}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{slug}}" srcset="{{image}} 150w, {{image}} 60w" sizes="(max-width: 60px) 100vw, 60px" />
-                                      <i class="fa fa-long-arrow-right overlay"></i>
-                                  </a>
-                              </div>
-                      </div>
-                      {{/prev_post}}
-              </div>
+          {{> post/adjacent-posts}}
           </div>
           {{> footer}}
     </div>
