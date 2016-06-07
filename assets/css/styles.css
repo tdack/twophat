@@ -4380,9 +4380,9 @@ body {
         font-size: 1.5em;
         padding: 0 0.25em;
         background: white;
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg) scale(1,6);
+        -moz-transform: rotate(-90deg) scale(1,6);;
+        -ms-transform: rotate(-90deg) scale(1,6);;
         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
