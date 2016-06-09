@@ -13,12 +13,13 @@
   #space-footer-wrapper,
   #space-single-header-classic,
   #adjacent-posts-wrapper,
-  div .related-recipes-wrapper,
-  div .widget_twophat_recipes,
-  div .post-share,
-  div .author-social-links
-    {
+  #space-single-wrapper #space-single .related-recipes-wrapper,
+  .widget_twophat_recipes,
+  #space-single-wrapper #space-single .post-author-wrapper
+  {
      display: none;
    }
-
+  #space-site.clearfix {
+    background-color: #fff;
+  }
 }
