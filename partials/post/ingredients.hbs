@@ -1,7 +1,10 @@
 {{#ct}}
-<!-- post/ingredients.hbs //-->
-    {{#if recipes}}
-    <div class="{{../divclass}}">
+  <!-- begin: post/ingredients.hbs -->
+  {{#if recipes}}
+    {{#if ../mobile}}
+    <div class="recipe-mobile-ingredients">
+    {{/if}}
+      <div class="widget clearfix recipe-card">
         <div class="recipe-card-title">Ingredients</div>
         <div class="separator">
             {{> includes/separator-small width="46px" height="12px"}}
@@ -27,7 +30,11 @@
         <meta property="description" content="">
         <meta property="image" content="{{../post.image}}">
       </div>
+      {{#if ../mobile}}
+    </div>
     {{/if}}
+  {{/if}}
+  <!-- end: post/ingredients.hbs -->
 {{else}}
-    <!-- No Ingredients Found -->
+  <!-- No Ingredients Found -->
 {{/ct}}

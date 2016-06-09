@@ -11,7 +11,7 @@
         <div id="space-body-wrapper">
           <div id="space-single-wrapper" class="clearfix header_classic">
               <div id="space-single" class="post-{{id}} space-recipes">
-                  {{> post/ingredients divclass="recipe-mobile-ingredients"}}
+                  {{> post/ingredients mobile="yes"}}
                   <div class="post-content-wrapper">
                       <div class="recipe-header">
                           <div class="header-title">
@@ -84,13 +84,13 @@
               </div>
               <div class="sidebar-wrapper">
                   <div class="sidebar clearfix">
-                      {{> post/ingredients divclass="widget clearfix recipe-card"}}
+                      {{> post/ingredients}}
                       <div class="widget clearfix widget_twophat_recipes">
                           <div class="widget-title">
                               <h4>Recent</h4>
                           </div>
                           <div class="recipes-holder">
-                            {{#get "posts" limit="5" as |post|}}
+                            {{#get "posts" limit="5" filter="id:-{{id}}" as |post|}}
                               {{#foreach post}}
                               <div class="recipe-holder clearfix">
                                   <div class="recipe-details clearfix">
