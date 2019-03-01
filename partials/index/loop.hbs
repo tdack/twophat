@@ -4,9 +4,9 @@
 <div class="recipe-grid-wrapper isotope-element">
     <div class="recipe-grid clearfix post-{{id}} space-recipes type-space-recipes status-publish format-standard has-post-thumbnail hentry space-recipe-categories-sweets space-recipe-tags-muffins space-recipe-tags-pastry">
         <div class="recipe-header">
-        {{#if image}}
+        {{#if feature_image}}
             <div class="recipe-thumbnail-wrapper">
-                <img width="760" height="470" src="{{image}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" />
+                <img width="760" height="470" src="{{img_url}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" />
                 <a class="thumbnail-overlay" href="{{url}}"><span>Details</span></a>
             </div>
         {{/if}}
@@ -20,9 +20,9 @@
                   <p>In <a property="recipeCategory" content="" href="{{url}}">{{name}}</a>
                 {{/foreach}}
                 {{/if}}
-                {{#author}}
+                {{#primary_author}}
                 <br />by <a href="{{url}}">{{name}}</a> on <a href="{{../url}}">{{date ../published_at format="DD MMMM YYYY"}}</a></p>
-                {{/author}}
+                {{/primary_author}}
           </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <div id="space-recipes-slider-wrapper" data-height="full_screen" data-autorotate="true" data-rotatedelay="8000">
     <div class="slider-elements">
       <div id="slide-0" class="slide current">
-        <div class="slide-background" style="background-image: url({{@blog.cover}});"></div>
+        <div class="slide-background" style="background-image: url({{@blog.cover_url}});"></div>
         <div class="slide-overlay-wrapper">
             <div class="slide-overlay">
                 <h1 class="recipe-title"><a class="recipe-link" href="">Welcome to {{@blog.title}}</a></h1>
@@ -10,17 +10,17 @@
                 </div>
             </div>
         </div>
-    {{#get "posts" include="tags,author" filter="featured:true" limit="5" as |featured|}}
+    {{#get "posts" include="tags,authors" filter="featured:true" limit="5" as |featured|}}
         {{#foreach featured}}
         <div id="slide-{{id}}" class="slide">
-            <div class="slide-background" style="background-image: url({{image}});"></div>
+            <div class="slide-background" style="background-image: url({{img_url}});"></div>
             <div class="slide-overlay-wrapper">
                 <div class="slide-overlay">
                     <h1 class="recipe-title"><a class="recipe-link" href="{{url}}">{{title}}</a></h1>
                     {{> includes/separator}}
                     <p class="recipe-lead">{{excerpt}}</p>
                     <div class="recipe-meta">
-                        <p>{{#if tags}}In <a property="recipeCategory" content='{{tags limit="1"}}' href="">{{tags limit="1"}}</a>{{/if}} by <a href="/author/{{author.slug}}">{{author.name}}</a> on <a href=""></a>{{date}}</p>
+                        <p>{{#if tags}}In <a property="recipeCategory" content='{{tags limit="1"}}' href="">{{tags limit="1"}}</a>{{/if}} by <a href="/author/{{primary_author.slug}}">{{primary_author.name}}</a> on <a href=""></a>{{date}}</p>
                     </div>
                 </div>
             </div>

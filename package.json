@@ -1,4 +1,8 @@
 {
-  "name": "Two Phat",
-  "version": "0.0.1"
+  "name": "two-phat",
+  "author": { 
+    "email": "troy@dack.com.au",
+    "name": "Troy Dack"
+  },
+  "version": "0.0.2"
 }

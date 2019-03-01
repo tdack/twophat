@@ -1,7 +1,7 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 {{! Everything inside the #author tags pulls data from the author }}
-{{#author}}
+{{#primary_author}}
     <body class="archive author author-{{id}}">
         <div id="space-site-wrapper" class="clearfix">
             <div id="space-site" class="clearfix">
@@ -9,7 +9,7 @@
                 <div class="header-bottom-border"></div>
                 <div id="space-archives-header-wrapper">
                     {{! If we have a cover, display that - else blog cover - else nothing }}
-                    <div id="archives-header-background" {{#if cover}} style="background-image: url({{cover}})" {{else}} {{#if @blog.cover}} style="background-image: url({{@blog.cover}})" {{else}} no-cover {{/if}} {{/if}}></div>
+                    <div id="archives-header-background" {{#if cover_image}} style="background-image: url({{cover_url}})" {{else}} {{#if @blog.cover_image}} style="background-image: url({{@blog.cover_url}})" {{else}} no-cover {{/if}} {{/if}}></div>
                     <div id="space-archives-header">
                         <div class="header-column column-to-left">
                             <h1 class="header-title" style="text-transform: capitalize;">{{name}}</h1>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-{{/author}}
+{{/primary_author}}
                 <div id="space-body-wrapper">
                     <div id="space-recipes-wrapper" class="clearfix boxed">
                         <div id="space-recipes" class="clearfix isotope-wrapper ">

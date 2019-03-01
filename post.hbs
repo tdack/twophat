@@ -17,12 +17,12 @@
                           <div class="header-title">
                               <h1 property="name">{{title}}</h1>
                           </div>
-                          {{#author}}
+                          {{#primary_author}}
                           <div class="header-meta">by <a property="author" content="{{name}}" href="{{url}}">{{name}}</a> on <a property="datePublished" datetime="{{date ../published_at}}" href="{{../url}}">{{date ../published_at format="MMMM DD, YYYY"}}</a></div>
-                          {{/author}}
+                          {{/primary_author}}
                       </div>
-                      {{#if image}}
-                        <div class="post-media featured-image clearfix"><img width="760" height="470" src="{{image}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" /></div>
+                      {{#if feature_image}}
+                        <div class="post-media featured-image clearfix"><img width="760" height="470" src="{{img_url}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" /></div>
                       {{/if}}
                       <div class="post-content space-content">
                         {{content}}
@@ -41,7 +41,7 @@
                                   <div class="share-links clearfix">
                                       <a class="share-link share-facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=497');return false;"><i class="fa fa-facebook-official"></i></a>
                                       <a class="share-link share-twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{title}}&url={{url absolute="true"}}" onclick="javascript:window.open(this.href, '{{title}}{{url absolute="true"}}', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=303,width=600');return false;"><i class="fa fa-twitter"></i></a>
-                                      <a class="share-link share-pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url={{url absolute="true"}}&media={{image absolute="true"}}&description={{excerpt}}"
+                                      <a class="share-link share-pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url={{url absolute="true"}}&media={{img_url absolute="true"}}&description={{excerpt}}"
                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-pinterest"></i></a>
                                       <a class="share-link share-google-plus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=497');return false;"><i class="fa fa-google-plus"></i></a>
                                   </div>
@@ -50,13 +50,13 @@
                       </div>
                   </div>
                   {{> "post/author"}}
-                    {{#get "posts" limit="2" include="tags,author" filter="id:-{{id}}"}}
+                    {{#get "posts" limit="2" include="tags,authors" filter="id:-{{id}}"}}
                         <div class="related-recipes-wrapper">
                             <div class="related-recipes clearfix">
                               {{! Loop through our posts collection }}
                               {{#foreach posts}}
                               <div class="related-recipe-wrapper">
-                                  <div class="related-background" style="background-image: url({{image}});"></div>
+                                  <div class="related-background" style="background-image: url({{img_url}});"></div>
                                   <div class="related-recipe">
                                       <div class="related-overlay">
                                           <h1 class="recipe-title"><a href="{{url}}">{{title}}</a></h1>
@@ -69,9 +69,9 @@
                                                   <p>In <a property="recipeCategory" content="{{name}}" href="{{url}}">{{name}}</a>
                                                 {{/foreach}}
                                               {{/if}}
-                                              {{#author}}
+                                              {{#primary_author}}
                                               by <a property="author" content="{{name}}" href="{{url}}">{{name}}</a> on <a property="datePublished" datetime="{{date ../published_at}}" href="{{../url}}">{{date ../published_at format="MMMM DD, YYYY"}}</a>
-                                              {{/author}}
+                                              {{/primary_author}}
                                               {{!-- <p>Time to cook <span class="meta">20 minutes<meta property="totalTime" datetime="PT20M" /></span>, make <span class="meta">4 servings</span></p> --}}
                                           </div>
                                       </div>
@@ -96,10 +96,10 @@
                                   <div class="recipe-details clearfix">
                                       <div class="recipe-title"><a href="{{url}}" title="{{title}}">{{title}}</a></div>
                                   </div>
-                                  {{#if image}}
+                                  {{#if feature_image}}
                                   <div class="recipe-thumbnail">
                                       <a href="{{url}}" title="{{title}}">
-                                          <img width="60" height="60" src="{{image}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{title}}" srcset="{{image}} 150w, {{image}} 60w"
+                                          <img width="60" height="60" src="{{img_url}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{title}}" srcset="{{img_url}} 150w, {{img_url}} 60w"
                                               sizes="(max-width: 60px) 100vw, 60px" />
                                           <i class="fa fa-long-arrow-right overlay"></i>
                                       </a>
