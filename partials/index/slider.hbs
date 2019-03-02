@@ -10,10 +10,10 @@
                 </div>
             </div>
         </div>
-    {{#get "posts" include="tags,authors" filter="featured:true" limit="5" as |featured|}}
-        {{#foreach featured}}
+    {{#get "posts" include="tags,authors" filter="featured:true" limit="5"}}
+        {{#foreach posts}}
         <div id="slide-{{id}}" class="slide">
-            <div class="slide-background" style="background-image: url({{img_url}});"></div>
+            <div class="slide-background" style="background-image: url({{feature_image}});"></div>
             <div class="slide-overlay-wrapper">
                 <div class="slide-overlay">
                     <h1 class="recipe-title"><a class="recipe-link" href="{{url}}">{{title}}</a></h1>
