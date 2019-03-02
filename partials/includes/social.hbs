@@ -1,8 +1,8 @@
-{{#if @blog.facebook}}
+{{#if @site.facebook}}
 <a class="instagram-btn" href="https://instagram.com/{{@site.facebook}}" target="_blank"><i class="fa fa-instagram"></i></a>
-<a class="facebook-btn" href="{{facebook_url @blog.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
+<a class="facebook-btn" href="{{facebook_url @site.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
 <a class="gplus-btn" href="https://plus.google.com/+{{@site.facebook}}" target="_blank"><i class="fa fa-google-plus"></i></a>
 {{/if}}
-{{#if @blog.twitter}}
-<a class="twitter-btn" href="{{twitter_url @blog.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
+{{#if @site.twitter}}
+<a class="twitter-btn" href="{{twitter_url @site.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
 {{/if}}

@@ -9,7 +9,7 @@
                 <div class="header-bottom-border"></div>
                 <div id="space-archives-header-wrapper">
                     {{! If we have a cover, display that - else blog cover - else nothing }}
-                    <div id="archives-header-background" {{#if cover_image}} style="background-image: url({{cover_url}})" {{else}} {{#if @blog.cover_image}} style="background-image: url({{@site.cover_image}})" {{else}} no-cover {{/if}} {{/if}}></div>
+                    <div id="archives-header-background" {{#if cover_image}} style="background-image: url({{cover_url}})" {{else}} {{#if @site.cover_image}} style="background-image: url({{@site.cover_image}})" {{else}} no-cover {{/if}} {{/if}}></div>
                     <div id="space-archives-header">
                         <div class="header-column column-to-left">
                             <h1 class="header-title" style="text-transform: capitalize;">{{name}}</h1>
