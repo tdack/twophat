@@ -1,10 +1,7 @@
-<script>
-    console.info('@blog.cover_url: {{@blog.cover_url}}')
-</script>
 <div id="space-recipes-slider-wrapper" data-height="full_screen" data-autorotate="true" data-rotatedelay="8000">
     <div class="slider-elements">
       <div id="slide-0" class="slide current">
-        <div class="slide-background" style="background-image: url({{@blog.cover_url}});"></div>
+        <div class="slide-background" style="background-image: url({{@site.cover_image}});"></div>
         <div class="slide-overlay-wrapper">
             <div class="slide-overlay">
                 <h1 class="recipe-title"><a class="recipe-link" href="">Welcome to {{@blog.title}}</a></h1>
@@ -15,11 +12,6 @@
         </div>
     {{#get "posts" include="tags,authors" filter="featured:true" limit="5" as |featured|}}
         {{#foreach featured}}
-
-        <script>
-            console.info('featured img_url: {{img_url}}')
-        </script>
-
         <div id="slide-{{id}}" class="slide">
             <div class="slide-background" style="background-image: url({{img_url}});"></div>
             <div class="slide-overlay-wrapper">
