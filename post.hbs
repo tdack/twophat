@@ -23,7 +23,7 @@
                           {{/primary_author}}
                       </div>
                       {{#if feature_image}}
-                        <div class="post-media featured-image clearfix"><img width="760" height="470" src="{{img_url}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" /></div>
+                        <div class="post-media featured-image clearfix"><img width="760" height="470" src="{{feature_image}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" /></div>
                       {{/if}}
                       <div class="post-content space-content">
                         {{content}}
@@ -57,7 +57,7 @@
                               {{! Loop through our posts collection }}
                               {{#foreach posts}}
                               <div class="related-recipe-wrapper">
-                                  <div class="related-background" style="background-image: url({{img_url}});"></div>
+                                  <div class="related-background" style="background-image: url({{feature_image}});"></div>
                                   <div class="related-recipe">
                                       <div class="related-overlay">
                                           <h1 class="recipe-title"><a href="{{url}}">{{title}}</a></h1>
@@ -100,7 +100,7 @@
                                   {{#if feature_image}}
                                   <div class="recipe-thumbnail">
                                       <a href="{{url}}" title="{{title}}">
-                                          <img width="60" height="60" src="{{img_url}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{title}}" srcset="{{img_url}} 150w, {{img_url}} 60w"
+                                          <img width="60" height="60" src="{{feature_image}}" class="attachment-60-60-thumbnail size-60-60-thumbnail wp-post-image" alt="{{title}}" srcset="{{feature_image}} 150w, {{feature_image}} 60w"
                                               sizes="(max-width: 60px) 100vw, 60px" />
                                           <i class="fa fa-long-arrow-right overlay"></i>
                                       </a>
