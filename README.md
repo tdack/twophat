@@ -1,4 +1,4 @@
-#Two Phat Dacks theme
+# Two Phat Dacks theme
 
 Symlink helpers.js to ghost root directory
 
