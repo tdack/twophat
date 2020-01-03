@@ -3,7 +3,7 @@
 
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
-<body class="single single-space-recipes postid-{{id}} single-format-standard loading">
+<body class="single single-space-recipes postid-{{comment_id}} single-format-standard loading">
   <div id="space-site-wrapper" class="clearfix">
     <div vocab="http://schema.org/" typeof="Recipe" id="space-site" class="clearfix">
     {{> header extraclass="always-filled"}}
@@ -11,7 +11,7 @@
         {{! The main content area }}
         <div id="space-body-wrapper">
           <div id="space-single-wrapper" class="clearfix header_classic">
-              <div id="space-single" class="post-{{id}} space-recipes">
+              <div id="space-single" class="post-{{comment_id}} space-recipes">
                   {{> post/ingredients mobile="yes"}}
                   <div class="post-content-wrapper">
                       <div class="recipe-header">
@@ -50,7 +50,7 @@
                       </div>
                   </div>
                   {{> "post/author"}}
-                    {{#get "posts" limit="2" include="tags,authors" filter="id:-{{id}}"}}
+                    {{#get "posts" limit="2" include="tags,authors" filter="id:-{{comment_id}}"}}
                         <div class="related-recipes-wrapper">
                             <div class="related-recipes clearfix">
                               {{! Loop through our posts collection }}
@@ -90,7 +90,7 @@
                               <h4>Recent</h4>
                           </div>
                           <div class="recipes-holder">
-                            {{#get "posts" limit="5" filter="id:-{{id}}" as |post|}}
+                            {{#get "posts" limit="5" filter="id:-{{comment_id}}" as |post|}}
                               {{#foreach post}}
                               <div class="recipe-holder clearfix">
                                   <div class="recipe-details clearfix">

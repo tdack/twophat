@@ -12,7 +12,7 @@
         </div>
     {{#get "posts" include="tags,authors" filter="featured:true" limit="5"}}
         {{#foreach posts}}
-        <div id="slide-{{id}}" class="slide">
+        <div id="slide-{{comment_id}}" class="slide">
             <div class="slide-background" style="background-image: url({{feature_image}});"></div>
             <div class="slide-overlay-wrapper">
                 <div class="slide-overlay">
@@ -32,7 +32,7 @@
         <a class="slide-control navigation prev-control" href="index.html#"><span class="number"><i class="fa fa-angle-left"></i></span></a>
         {{#get "posts" filter="featured:true" limit="5" as |featured|}}
             {{#foreach featured}}
-              <a class="slide-control pagination" href="#" data-target="slide-{{id}}" title="{{title}}"><span class="number">{{@number}}</span></a>
+              <a class="slide-control pagination" href="#" data-target="slide-{{comment_id}}" title="{{title}}"><span class="number">{{@number}}</span></a>
             {{/foreach}}
         {{/get}}
         <a class="slide-control navigation next-control" href="index.html#"><span class="number"><i class="fa fa-angle-right"></i></span></a>
