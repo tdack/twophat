@@ -5427,7 +5427,7 @@ body {
 
 /* line 5474, styles.scss */
 
-.space-content,
+.twophat-content,
 .textwidget {
     overflow: hidden;
 }
@@ -5435,7 +5435,7 @@ body {
 
 /* line 5479, styles.scss */
 
-.space-content>*,
+.twophat-content>*,
 .textwidget>* {
     max-width: 100%;
 }
@@ -5443,12 +5443,12 @@ body {
 
 /* line 5485, styles.scss */
 
-.space-content h1,
-.space-content h2,
-.space-content h3,
-.space-content h4,
-.space-content h5,
-.space-content h6,
+.twophat-content h1,
+.twophat-content h2,
+.twophat-content h3,
+.twophat-content h4,
+.twophat-content h5,
+.twophat-content h6,
 .textwidget h1,
 .textwidget h2,
 .textwidget h3,
@@ -5463,7 +5463,7 @@ body {
 
 /* line 5499, styles.scss */
 
-.space-content h1,
+.twophat-content h1,
 .textwidget h1 {
     font-size: 26px;
     line-height: 30px;
@@ -5472,7 +5472,7 @@ body {
 
 /* line 5506, styles.scss */
 
-.space-content h2,
+.twophat-content h2,
 .textwidget h2 {
     font-size: 24px;
     line-height: 30px;
@@ -5481,7 +5481,7 @@ body {
 
 /* line 5513, styles.scss */
 
-.space-content h3,
+.twophat-content h3,
 .textwidget h3 {
     font-size: 22px;
     line-height: 30px;
@@ -5490,7 +5490,7 @@ body {
 
 /* line 5520, styles.scss */
 
-.space-content h4,
+.twophat-content h4,
 .textwidget h4 {
     font-size: 20px;
     line-height: 30px;
@@ -5499,7 +5499,7 @@ body {
 
 /* line 5527, styles.scss */
 
-.space-content h5,
+.twophat-content h5,
 .textwidget h5 {
     font-size: 18px;
     line-height: 30px;
@@ -5508,7 +5508,7 @@ body {
 
 /* line 5534, styles.scss */
 
-.space-content h6,
+.twophat-content h6,
 .textwidget h6 {
     font-size: 16px;
     line-height: 30px;
@@ -5517,7 +5517,7 @@ body {
 
 /* line 5541, styles.scss */
 
-.space-content p,
+.twophat-content p,
 .textwidget p {
     margin-bottom: 30px;
 }
@@ -5525,7 +5525,7 @@ body {
 
 /* line 5547, styles.scss */
 
-.space-content blockquote,
+.twophat-content blockquote,
 .textwidget blockquote {
     position: relative;
     display: block;
@@ -5542,7 +5542,7 @@ body {
 
 /* line 5564, styles.scss */
 
-.space-content blockquote cite,
+.twophat-content blockquote cite,
 .textwidget blockquote cite {
     padding: 5px 0px;
     background-color: none;
@@ -5552,7 +5552,7 @@ body {
 
 /* line 5575, styles.scss */
 
-.space-content cite,
+.twophat-content cite,
 .textwidget cite {
     padding: 5px 10px;
     background-color: #fafafa;
@@ -5567,7 +5567,7 @@ body {
 
 /* line 5590, styles.scss */
 
-.space-content table,
+.twophat-content table,
 .textwidget table {
     margin-bottom: 30px;
     width: 100%;
@@ -5580,7 +5580,7 @@ body {
 
 /* line 5603, styles.scss */
 
-.space-content table thead,
+.twophat-content table thead,
 .textwidget table thead {
     border: 1px solid #eee;
     background-color: #fdfdfd;
@@ -5592,7 +5592,7 @@ body {
 
 /* line 5612, styles.scss */
 
-.space-content table thead tr,
+.twophat-content table thead tr,
 .textwidget table thead tr {
     border: 1px solid #eee;
 }
@@ -5600,7 +5600,7 @@ body {
 
 /* line 5616, styles.scss */
 
-.space-content table thead tr th,
+.twophat-content table thead tr th,
 .textwidget table thead tr th {
     padding: 10px;
     border: 1px solid #eee;
@@ -5609,7 +5609,7 @@ body {
 
 /* line 5628, styles.scss */
 
-.space-content table tbody,
+.twophat-content table tbody,
 .textwidget table tbody {
     border: 1px solid #eee;
 }
@@ -5617,7 +5617,7 @@ body {
 
 /* line 5634, styles.scss */
 
-.space-content table tbody tr th,
+.twophat-content table tbody tr th,
 .textwidget table tbody tr th {
     padding: 10px;
     border: 1px solid #eee;
@@ -5626,7 +5626,7 @@ body {
 
 /* line 5642, styles.scss */
 
-.space-content table tbody tr td,
+.twophat-content table tbody tr td,
 .textwidget table tbody tr td {
     padding: 10px;
     border: 1px solid #eee;
@@ -5635,7 +5635,7 @@ body {
 
 /* line 5656, styles.scss */
 
-.space-content dl,
+.twophat-content dl,
 .textwidget dl {
     margin-bottom: 20px;
 }
@@ -5643,7 +5643,7 @@ body {
 
 /* line 5660, styles.scss */
 
-.space-content dl dt,
+.twophat-content dl dt,
 .textwidget dl dt {
     font-size: 14px;
     line-height: 22px;
@@ -5653,7 +5653,7 @@ body {
 
 /* line 5668, styles.scss */
 
-.space-content dl dd,
+.twophat-content dl dd,
 .textwidget dl dd {
     padding: 10px 0 10px 40px;
     font-size: 16px;
@@ -5663,7 +5663,7 @@ body {
 
 /* line 5679, styles.scss */
 
-.space-content a,
+.twophat-content a,
 .textwidget a {
     color: inherit;
     font-weight: 700;
@@ -5678,7 +5678,7 @@ body {
 
 /* line 5689, styles.scss */
 
-.space-content a:hover,
+.twophat-content a:hover,
 .textwidget a:hover {
     border-color: #b48360;
 }
@@ -5686,8 +5686,8 @@ body {
 
 /* line 5697, styles.scss */
 
-.space-content ul,
-.space-content ol,
+.twophat-content ul,
+.twophat-content ol,
 .textwidget ul,
 .textwidget ol {
     margin-bottom: 30px;
@@ -5698,10 +5698,10 @@ body {
 
 /* line 5704, styles.scss */
 
-.space-content ul ul,
-.space-content ul ol,
-.space-content ol ul,
-.space-content ol ol,
+.twophat-content ul ul,
+.twophat-content ul ol,
+.twophat-content ol ul,
+.twophat-content ol ol,
 .textwidget ul ul,
 .textwidget ul ol,
 .textwidget ol ul,
@@ -5710,16 +5710,16 @@ body {
     margin-bottom: 0;
 }
 
-.space-content ol {
+.twophat-content ol {
     list-style-type: decimal;
 }
 
 
 /* line 5714, styles.scss */
 
-.space-content strong,
-.space-content big,
-.space-content b,
+.twophat-content strong,
+.twophat-content big,
+.twophat-content b,
 .textwidget strong,
 .textwidget big,
 .textwidget b {
@@ -5729,7 +5729,7 @@ body {
 
 /* line 5722, styles.scss */
 
-.space-content address,
+.twophat-content address,
 .textwidget address {
     display: inline-block;
     margin-bottom: 30px;
@@ -5741,7 +5741,7 @@ body {
 
 /* line 5735, styles.scss */
 
-.space-content em,
+.twophat-content em,
 .textwidget em {
     font-style: italic;
 }
@@ -5749,7 +5749,7 @@ body {
 
 /* line 5741, styles.scss */
 
-.space-content ins,
+.twophat-content ins,
 .textwidget ins {
     text-decoration: none;
     border-bottom: 1px solid #777;
@@ -5758,8 +5758,8 @@ body {
 
 /* line 5749, styles.scss */
 
-.space-content abbr,
-.space-content acronym,
+.twophat-content abbr,
+.twophat-content acronym,
 .textwidget abbr,
 .textwidget acronym {
     font-family: "Bellota", sans-serif;
@@ -5769,8 +5769,8 @@ body {
 
 /* line 5757, styles.scss */
 
-.space-content del,
-.space-content strike,
+.twophat-content del,
+.twophat-content strike,
 .textwidget del,
 .textwidget strike {
     text-decoration: line-through;
@@ -5779,10 +5779,10 @@ body {
 
 /* line 5764, styles.scss */
 
-.space-content code,
-.space-content kbd,
-.space-content tt,
-.space-content var,
+.twophat-content code,
+.twophat-content kbd,
+.twophat-content tt,
+.twophat-content var,
 .textwidget code,
 .textwidget kbd,
 .textwidget tt,
@@ -5799,7 +5799,7 @@ body {
 
 /* line 5783, styles.scss */
 
-.space-content pre,
+.twophat-content pre,
 .textwidget pre {
     margin-bottom: 30px;
     padding: 30px;
@@ -5815,7 +5815,7 @@ body {
 
 /* line 5802, styles.scss */
 
-.space-content q,
+.twophat-content q,
 .textwidget q {
     color: #777;
     font-family: "Bellota", sans-serif;
@@ -5825,7 +5825,7 @@ body {
 
 /* line 5811, styles.scss */
 
-.space-content sub,
+.twophat-content sub,
 .textwidget sub {
     vertical-align: text-top;
 }
@@ -5833,7 +5833,7 @@ body {
 
 /* line 5817, styles.scss */
 
-.space-content sup,
+.twophat-content sup,
 .textwidget sup {
     vertical-align: text-bottom;
 }
@@ -5841,7 +5841,7 @@ body {
 
 /* line 5823, styles.scss */
 
-.space-content img,
+.twophat-content img,
 .textwidget img {
     max-width: 100%;
     height: auto;
@@ -5851,8 +5851,8 @@ body {
 
 /* line 5830, styles.scss */
 
-.space-content embed,
-.space-content iframe,
+.twophat-content embed,
+.twophat-content iframe,
 .textwidget embed,
 .textwidget iframe {
     max-width: 100%;
@@ -5862,8 +5862,8 @@ body {
 
 /* line 5839, styles.scss */
 
-.space-content select,
-.space-content input,
+.twophat-content select,
+.twophat-content input,
 .textwidget select,
 .textwidget input {
     max-width: 100%;
@@ -5872,7 +5872,7 @@ body {
 
 /* line 5848, styles.scss */
 
-.space-content .aligncenter,
+.twophat-content .aligncenter,
 .textwidget .aligncenter {
     display: inline-block;
     text-align: center;
@@ -5881,7 +5881,7 @@ body {
 
 /* line 5855, styles.scss */
 
-.space-content .alignright,
+.twophat-content .alignright,
 .textwidget .alignright {
     float: right;
     margin-left: 30px;
@@ -5891,7 +5891,7 @@ body {
 
 /* line 5863, styles.scss */
 
-.space-content .alignleft,
+.twophat-content .alignleft,
 .textwidget .alignleft {
     float: left;
     margin-right: 30px;
@@ -5901,7 +5901,7 @@ body {
 
 /* line 5871, styles.scss */
 
-.space-content .wp-caption,
+.twophat-content .wp-caption,
 .textwidget .wp-caption {
     position: relative;
     display: block;
@@ -5911,7 +5911,7 @@ body {
     overflow: hidden;
 }
 
-.space-content hr,
+.twophat-content hr,
 .textwidget hr {
     padding: 0;
     border: none;
@@ -5920,7 +5920,7 @@ body {
     text-align: center;
 }
 
-.space-content hr:after,
+.twophat-content hr:after,
 .textwidget hr:after {
     content: "§";
     display: inline-block;
@@ -5942,7 +5942,7 @@ body {
 
 /* line 5886, styles.scss */
 
-.space-content .wp-caption p.wp-caption-text,
+.twophat-content .wp-caption p.wp-caption-text,
 .textwidget .wp-caption p.wp-caption-text {
     margin: 10px 10px 0 10px;
     color: #777;
@@ -5954,7 +5954,7 @@ body {
 
 /* line 5897, styles.scss */
 
-.space-content .gallery,
+.twophat-content .gallery,
 .textwidget .gallery {
     position: relative;
     display: block;
@@ -5964,7 +5964,7 @@ body {
 
 /* line 5904, styles.scss */
 
-.space-content .gallery .gallery-item,
+.twophat-content .gallery .gallery-item,
 .textwidget .gallery .gallery-item {
     position: relative;
     display: inline-block;
@@ -5978,7 +5978,7 @@ body {
 
 /* line 5919, styles.scss */
 
-.space-content .gallery .gallery-item .gallery-icon,
+.twophat-content .gallery .gallery-item .gallery-icon,
 .textwidget .gallery .gallery-item .gallery-icon {
     position: relative;
     display: block;
@@ -5989,7 +5989,7 @@ body {
 
 /* line 5929, styles.scss */
 
-.space-content .gallery .gallery-item .gallery-caption,
+.twophat-content .gallery .gallery-item .gallery-caption,
 .textwidget .gallery .gallery-item .gallery-caption {
     position: relative;
     display: block;
@@ -6004,7 +6004,7 @@ body {
 
 /* line 5948, styles.scss */
 
-.space-content .gallery.gallery-columns-1 .gallery-item,
+.twophat-content .gallery.gallery-columns-1 .gallery-item,
 .textwidget .gallery.gallery-columns-1 .gallery-item {
     width: 100%;
 }
@@ -6012,7 +6012,7 @@ body {
 
 /* line 5958, styles.scss */
 
-.space-content .gallery.gallery-columns-2 .gallery-item,
+.twophat-content .gallery.gallery-columns-2 .gallery-item,
 .textwidget .gallery.gallery-columns-2 .gallery-item {
     width: 50%;
 }
@@ -6020,7 +6020,7 @@ body {
 
 /* line 5968, styles.scss */
 
-.space-content .gallery.gallery-columns-3 .gallery-item,
+.twophat-content .gallery.gallery-columns-3 .gallery-item,
 .textwidget .gallery.gallery-columns-3 .gallery-item {
     width: 33.33%;
 }
@@ -6028,7 +6028,7 @@ body {
 
 /* line 5978, styles.scss */
 
-.space-content .gallery.gallery-columns-4 .gallery-item,
+.twophat-content .gallery.gallery-columns-4 .gallery-item,
 .textwidget .gallery.gallery-columns-4 .gallery-item {
     width: 25%;
 }
@@ -6036,7 +6036,7 @@ body {
 
 /* line 5988, styles.scss */
 
-.space-content .gallery.gallery-columns-5 .gallery-item,
+.twophat-content .gallery.gallery-columns-5 .gallery-item,
 .textwidget .gallery.gallery-columns-5 .gallery-item {
     width: 20%;
 }
@@ -6044,7 +6044,7 @@ body {
 
 /* line 5998, styles.scss */
 
-.space-content .gallery.gallery-columns-6 .gallery-item,
+.twophat-content .gallery.gallery-columns-6 .gallery-item,
 .textwidget .gallery.gallery-columns-6 .gallery-item {
     width: 16.66%;
 }
@@ -6052,7 +6052,7 @@ body {
 
 /* line 6008, styles.scss */
 
-.space-content .gallery.gallery-columns-7 .gallery-item,
+.twophat-content .gallery.gallery-columns-7 .gallery-item,
 .textwidget .gallery.gallery-columns-7 .gallery-item {
     width: 14.27%;
 }
@@ -6060,7 +6060,7 @@ body {
 
 /* line 6018, styles.scss */
 
-.space-content .gallery.gallery-columns-8 .gallery-item,
+.twophat-content .gallery.gallery-columns-8 .gallery-item,
 .textwidget .gallery.gallery-columns-8 .gallery-item {
     width: 12.5%;
 }
@@ -6068,7 +6068,7 @@ body {
 
 /* line 6028, styles.scss */
 
-.space-content .gallery.gallery-columns-9 .gallery-item,
+.twophat-content .gallery.gallery-columns-9 .gallery-item,
 .textwidget .gallery.gallery-columns-9 .gallery-item {
     width: 11.1%;
 }
@@ -6076,7 +6076,7 @@ body {
 
 /* line 6038, styles.scss */
 
-.space-content .screen-reader-text,
+.twophat-content .screen-reader-text,
 .textwidget .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
@@ -6088,7 +6088,7 @@ body {
 
 /* line 6048, styles.scss */
 
-.space-content .screen-reader-text:focus,
+.twophat-content .screen-reader-text:focus,
 .textwidget .screen-reader-text:focus {
     background-color: #f1f1f1;
     border-radius: 3px;

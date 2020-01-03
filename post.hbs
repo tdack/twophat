@@ -3,15 +3,15 @@
 
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
-<body class="single single-space-recipes postid-{{comment_id}} single-format-standard loading">
-  <div id="space-site-wrapper" class="clearfix">
-    <div vocab="http://schema.org/" typeof="Recipe" id="space-site" class="clearfix">
+<body class="single single-twophat-recipes postid-{{comment_id}} single-format-standard loading">
+  <div id="twophat-site-wrapper" class="clearfix">
+    <div vocab="http://schema.org/" typeof="Recipe" id="twophat-site" class="clearfix">
     {{> header extraclass="always-filled"}}
-    <div id="space-single-header-classic"></div>
+    <div id="twophat-single-header-classic"></div>
         {{! The main content area }}
-        <div id="space-body-wrapper">
-          <div id="space-single-wrapper" class="clearfix header_classic">
-              <div id="space-single" class="post-{{comment_id}} space-recipes">
+        <div id="twophat-body-wrapper">
+          <div id="twophat-single-wrapper" class="clearfix header_classic">
+              <div id="twophat-single" class="post-{{comment_id}} twophat-recipes">
                   {{> post/ingredients mobile="yes"}}
                   <div class="post-content-wrapper">
                       <div class="recipe-header">
@@ -25,7 +25,7 @@
                       {{#if feature_image}}
                         <div class="post-media featured-image clearfix"><img width="760" height="470" src="{{feature_image}}" class="attachment-760-470-thumbnail size-760-470-thumbnail wp-post-image" alt="{{title}}" /></div>
                       {{/if}}
-                      <div class="post-content space-content">
+                      <div class="post-content twophat-content">
                         {{content}}
                       </div>
                       <div class="post-footer clearfix">

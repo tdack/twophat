@@ -2,18 +2,18 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 <body class="archive tag-{{tag.id}}">
-  <div id="space-site-wrapper" class="clearfix">
-    <div id="space-site" class="clearfix">
+  <div id="twophat-site-wrapper" class="clearfix">
+    <div id="twophat-site" class="clearfix">
         {{#is "paged"}}
             {{> header extraclass="always-filled"}}
         {{else}}
             {{> header}}
         {{/is}}
         <div class="header-bottom-border"></div>
-          <div id="space-archives-header-wrapper">
+          <div id="twophat-archives-header-wrapper">
             {{! If we have a tag cover, display that - else blog cover - else nothing }}
             <div id="archives-header-background" {{#if tag.feature_image}}style="background-image: url({{tag.feature_image}})" {{else}}{{#if @site.cover_image}} style="background-image: url({{@site.cover_image}})" {{else}}no-cover{{/if}}{{/if}}></div>
-            <div id="space-archives-header">
+            <div id="twophat-archives-header">
                 <div class="header-column column-to-left">
                     <h1 class="header-title" style="text-transform: capitalize;">{{tag.name}}</h1>
                 </div>
@@ -33,9 +33,9 @@
             </div>
         </div>
         {{! The main content area on the homepage }}
-        <div id="space-body-wrapper">
-            <div id="space-recipes-wrapper" class="clearfix boxed">
-                <div id="space-recipes" class="clearfix isotope-wrapper ">
+        <div id="twophat-body-wrapper">
+            <div id="twophat-recipes-wrapper" class="clearfix boxed">
+                <div id="twophat-recipes" class="clearfix isotope-wrapper ">
                   {{! The tag below includes the post loop - partials/post/loop.hbs }}
                   {{> "index/loop"}}
                 </div>
