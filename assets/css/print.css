@@ -1,25 +1,21 @@
 @media print {
-
-  * {
-    background: #fff;
-    color: #000;
-  }
-
-  html {
-    font-size: 100%/1.5;
-  }
-
-  #space-header-wrapper,
-  #space-footer-wrapper,
-  #space-single-header-classic,
-  #adjacent-posts-wrapper,
-  #space-single-wrapper #space-single .related-recipes-wrapper,
-  .widget_twophat_recipes,
-  #space-single-wrapper #space-single .post-author-wrapper
-  {
-     display: none;
-   }
-  #space-site.clearfix {
-    background-color: #fff;
-  }
+    * {
+        background: #fff;
+        color: #000;
+    }
+    html {
+        font-size: 100%/1.5;
+    }
+    #twophat-header-wrapper,
+    #twophat-footer-wrapper,
+    #twophat-single-header-classic,
+    #adjacent-posts-wrapper,
+    #twophat-single-wrapper #twophat-single .related-recipes-wrapper,
+    .widget_twophat_recipes,
+    #twophat-single-wrapper #twophat-single .post-author-wrapper {
+        display: none;
+    }
+    #twophat-site.clearfix {
+        background-color: #fff;
+    }
 }
